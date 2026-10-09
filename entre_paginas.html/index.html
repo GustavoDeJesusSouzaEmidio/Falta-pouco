@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title> 
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<nav>
+    <img src="imagens-visual/logo22.png" alt="entre_paginas" class="logo">
+
+    <div class="nav-direita">
+       <a class="nav-icone" href="index.html">
+        <img src="imagens-icons/grafico1.png" alt="dashboard" class="dashboard">
+      </a>
+
+      <a class="nav-icone" href="produtos.html">
+        <img src="imagens-icons/usuario.png" alt="vendedor" class="perfil-vendedor">
+      </a>
+
+    </div>
+  </nav>
+
+
+  <div class="layout">
+
+    <aside class="lateral">
+      <ul class="nav-lateral">
+        <li><a href="#" class="active"><img src="imagens-icons/casa.png" alt="dashboard">Dashboard</a></li>
+        <li><a href="livros.html">Livros</a></li>
+
+        <li><a href="#" class="active"><img src="imagens-icons/livro-icon.png" alt="abas">Gêneros Literários</a></li>
+
+        <li><a href="romance.html">Romance</a></li>
+        <li><a href="estudos.html">Estudos</a></li>
+        <li><a href="teologico.html">Teológico</a></li>
+        <li><a href="fantasia.html">Fantasia</a></li>
+        <li><a href="suspense.html">Suspense</a></li>
+      </ul>
+      <a href="login.html" class="botao-sair">Sair</a>
+    </aside>
+
+  <!--INFORMAÇÕES DE CIMA-->
+
+    <main class="principal">
+  <div class="indicadores">
+
+    <div class="indicadores-card">
+      <span class="indicadores-icon">
+        <img src="imagens-icons/livro-icon.png" alt="livros">
+      </span>
+
+      <div class="indicadores-infos">
+        <span class="indicadores-titulo">Total de livros</span>
+        <span class="indicadores-valor">36</span>
+      </div>
+    </div>
+
+    <div class="indicadores-card">
+      <span class="indicadores-icon">
+        <img src="imagens-icons/clientes.png" alt="clientes">
+      </span>
+
+      <div class="indicadores-infos">
+        <span class="indicadores-titulo">Total de clientes</span>
+        <span class="indicadores-valor">0</span>
+      </div>
+    </div>
+
+     <div class="indicadores-card">
+      <span class="indicadores-icon">
+        <img src="imagens-icons/moeda.png" alt="faturamento">
+      </span>
+
+      <div class="indicadores-infos">
+        <span class="indicadores-titulo">Faturamento do mês</span>
+        <span class="indicadores-valor">36</span>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- LINHA DO MEIO -->
+  <div class="central">
+
+    <!-- ESTOQUE -->
+    <div class="painel">
+
+      <div class="painel-titulo">
+        <img src="imagens-icons/produtos.png">
+        Resumo de estoque
+      </div>
+
+      <div class="estoque-status">
+
+        <div class="estoque-item">
+          <span class="estoque-icon">
+            <img src="imagens-icons/livro-icon.png">
+          </span>
+
+          <span class="estoque-disponibilidade">Em estoque</span>
+          <span class="estoque-valor">36</span>
+        </div>
+
+        <div class="estoque-item">
+          <span class="estoque-icon">
+            <img src="imagens-icons/aviso.png">
+          </span>
+
+          <span class="estoque-disponibilidade">Estoque baixo</span>
+          <span class="estoque-valor">0</span>
+        </div>
+
+        <div class="estoque-item">
+          <span class="estoque-icon">
+            <img src="imagens-icons/proibido.png">
+          </span>
+
+          <span class="estoque-disponibilidade">Esgotados</span>
+          <span class="estoque-valor">0</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- PEDIDOS -->
+    <div class="painel">
+
+      <div class="header-pedidos">
+
+        <div class="painel-titulo" style="margin-bottom:0;">
+          <img src="imagens-icons/carrinho.png">
+          Pedidos recentes
+        </div>
+
+        <button class="ver-botao">Ver todos</button>
+
+      </div>
+
+      <div class="tabela-pedidos-header">
+        <span>Pedido</span>
+        <span>Cliente</span>
+        <span>Data</span>
+        <span>Status</span>
+        <span>Total</span>
+      </div>
+
+      <div class="pedidos">
+        Nenhum pedido ainda.
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- GRÁFICO -->
+  <div class="painel">
+
+    <div class="grafico-header">
+
+      <div class="painel-titulo">
+        <img src="imagens-icons/grafico1.png">
+        Vendas dos últimos meses
+      </div>
+
+      <a href="#" class="grafico-link">ver ano →</a>
+
+    </div>
+
+    <div>
+
+      <div class="grafico-area">
+
+        <div class="grafico-legendas">
+        <span>0</span>
+        <span>20</span>
+        <span>40</span>
+        <span>60</span>
+        <span>80</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Jan</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Fev</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Mar</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Abr</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Mai</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Jun</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+</body>
+</html>

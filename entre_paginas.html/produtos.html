@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Produtos</title>
+  
+  <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+
+ <nav>
+    <img src="imagens-visual/logo22.png" alt="entre_paginas" class="logo">
+
+    <div class="nav-direita">
+       <a class="nav-icone" href="index.html">
+        <img src="imagens-icons/grafico1.png" alt="dashboard" class="dashboard">
+      </a>
+
+      <a class="nav-icone" href="produtos.html">
+        <img src="imagens-icons/usuario.png" alt="vendedor" class="perfil-vendedor">
+      </a>
+
+    </div>
+  </nav>
+  
+  <div class="conteudo">  
+    <div class="painel-cadastro">
+      <h2 class="titulo">Cadastrar Produto</h2>
+      
+      <div class="campo">
+        <label class="rotulo" for="categoria">Categoria</label>
+        <select class="selecionar-categoria" id="categoria">
+          <option value="disabled selected">Selecionar...</option>
+          <option value="romance">Romance</option>
+          <option value="fantasia">Fantasia</option>
+          <option value="suspense">Suspense</option>
+          <option value="terror">Terror</option>
+          <option value="estudos">Estudos</option>
+          <option value="teologico">Teológico</option>
+        </select>
+      </div>
+
+     
+      <div class="campo">
+        <label class="rotulo" for="nome">Nome</label>
+        <input class="texto" type="text" id="nome" placeholder="Digitar..." />
+      </div>
+
+      <div class="campo">
+        <label class="rotulo" for="nome">Preço</label>
+        <input class="texto" type="text" id="nome" placeholder="Digitar..." />
+      </div>
+
+      <div class="campo">
+        <label class="rotulo" for="nome">Estoque</label>
+        <input class="texto" type="text" id="nome" placeholder="Digitar..." />
+      </div>
+
+      
+      <div class="campo">
+        <label class="rotulo" for="descricao">
+          Descrição <span class="opcional">(opcional)</span>
+        </label>
+        <textarea class="campo-descricao" id="descricao" placeholder="Digitar..."></textarea>
+      </div>
+
+     
+      <div class="campo">
+        <label class="rotulo">
+          Imagem do produto <span class="opcional">(opcional)</span>
+        </label>
+        <input type="file" class="file-real" id="imagem-input" accept=".jpg,.webp" />
+        
+        <div class="arquivos">
+          <label for="imagem-input" class="botao-escolher">Escolher arquivo</label>
+          <span class="nome-arquivo" id="file-display">Nenhum arquivo</span>
+        </div>
+        <p class="formato-arquivo">Formatos: JPG, WEBP (até 2MB). Salva como ID do produto.</p>
+      </div>
+
+     
+      <div class="acoes-cadastro">
+        <button class="botao-salvar">Salvar</button>
+        <button class="botao-limpar">Limpar</button>
+      </div>
+    </div>
+
+    
+    <div class="painel-produtos">
+      <h2 class="titulo">Lista de Produtos</h2>
+
+      
+      <div class="produtos-cabecalho">
+        <span>Imagem</span>
+        <span>ID</span>
+        <span>Nome</span>
+        <span>Categoria</span>
+        <span>Status</span>
+        <span>Ações</span>
+      </div>
+
+      
+      <div class="produtos">
+        <div class="foto-produto">📷</div>
+        <span class="id-produto">#0</span>
+        <span class="nome-produto">XXX</span>
+        <span class="categoria-produto">XXX</span>
+        <span class="status">Ativo</span>
+        
+        <div class="acoes">
+          <button class="botao-editar">Editar</button>
+          <button class="botao-inativar">Inativar</button>
+          <button class="botao-excluir">Excluir</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
